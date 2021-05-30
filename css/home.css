@@ -1,3 +1,4 @@
+/*----------- Home Page Header -----------------------------*/
 header{ height: calc(100vh - 60px); }
 header p{ width: 40%; padding: 30px 0 60px;}
 header .btn2{ margin-left: 10px;}
@@ -9,16 +10,18 @@ header .image:nth-of-type(2){ top: 10%; left: 30%; width: 300px; background-colo
 header .image:nth-of-type(3){ top: 20%; right: 15%; height: 300px; background-color: #aaa;}
 header .image:nth-of-type(4){ top: 50%; left: 30%; width: 300px; background-color: #bbb;}
 
-
+/*----------------- Services section ---------------------*/
 .services .grid{ grid-template-columns: 1fr 1fr 1fr 1fr; column-gap: 40px; row-gap: 40px;}
 .service{width: 100%; padding-top: 60%; border-radius: 20px; position: relative;
         background-image: url("/resources/mainImg.jpg"); background-size: cover;}
 .service h5{bottom: 0; color: white; padding: 20px 25px; text-shadow: 0 0 10px black;}
 
+/*---------------- Recent Area section -----------------------*/
 .recent .grid{ grid-template-columns: 3fr 2fr; column-gap: 50px; }
 .recent .grid img{ width: 100%;}
 .recent p{padding: 15px 0 30px;}
 
+/*-------------------- Perks section ------------------------*/
 .perks .grid:nth-of-type(1){ grid-template-columns: 1fr 1fr 1fr 1fr 1fr; column-gap: 50px;}
 .perks p{padding: 20px 0 50px;}
 .perk{ width: 100%; background-color: var(--bg2); border-radius: 10px; padding: 30px 10px;
@@ -31,6 +34,7 @@ header .image:nth-of-type(4){ top: 50%; left: 30%; width: 300px; background-colo
 .stats:last-of-type{ border-right: none;}
 .stats span{ font-size: 2rem;}
 
+/*---------------------  Testimonial section --------------------------*/
 .outer{ width: 100%;}
 .outer > .grid{ grid-template-columns: 1fr 1fr 1fr; column-gap: 50px; width: 100%; }
 .review{ width: 100%; background-color: var(--bg2); border-radius: 10px; padding: 30px;}
@@ -38,10 +42,12 @@ header .image:nth-of-type(4){ top: 50%; left: 30%; width: 300px; background-colo
 .review img{ height: 50px; width: 50px; border-radius: 50%;}
 .review > p{ padding: 15px 0 5px;}
 
+/*-------------------- Top events section -----------------------*/
 .topEvents .grid{ grid-template-columns: 1fr 1fr; column-gap: 100px;}
 .topEvents article img{ width: 100%; border-radius: 20px;}
 .topEvents article p{ padding: 10px 0 20px;}
 
+/*--------------------- Last section ---------------------------*/
 .ending{ overflow: hidden; padding-bottom: 150px;}
 .ending h3{ left: 0; font-size: 12vw; color: #eee; }
 .ending .svgplace{ height: 300px; width: 20%; margin: auto; background-color: #aaa4;}

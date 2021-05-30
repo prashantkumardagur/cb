@@ -3,8 +3,6 @@
     <title>Creative Beast EMS - Event Management Services - Home Page </title>
     <style>
         <?php include("css/home.css"); include("css/achievement.css") ?>
-
-        nav{background-color: #eee; box-shadow: none;}
     </style>
 </head>
 <body>
@@ -12,6 +10,7 @@
     <div class="container">
 
         <?php include("elements/navbar.html") ?>
+        <script>document.getElementById("navId1").classList.add("activeNav");</script>
 
         <header class="bg3 pad2 rel">
             <h1 class="h1 pad90">Have an <span class="accent">Event</span><br/>to be <span class="accent">organised</span>?</h1>
@@ -65,7 +64,7 @@
 
         <div class="perks pad">
             <h3 class="h2"><span class="accent">Perks</span> of working with <span class="accent">Us</span><div class="hline"></div></h3>
-            <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda debitis eos atque impedit. Natus, nostrum exercitationem quos magni temporibus tempora omnis laborum dolores. Corporis quas veniam dolorum voluptatum eum. Rem.</p>
+            <p class="p3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda debitis eos atque impedit. Natus, nostrum exercitationem quos magni temporibus tempora omnis laborum dolores. Corporis quas veniam dolorum voluptatum eum. Rem.</p>
             <div class="grid">
                 <div class="perk"><i class="fas fa-hand-holding-usd"></i>Cost efficient</div>
                 <div class="perk"><i class="fas fa-user-friends"></i>Support</div>

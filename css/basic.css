@@ -40,7 +40,7 @@
 /*-------------- HTML Element Basic ---------------*/
 *{ padding: 0; margin: 0; box-sizing: border-box; }
 html{ scroll-behavior: smooth; }
-body{ cursor: default; font-family: var(--font2); font-size: 20px;}
+body{ cursor: default; font-family: var(--font2); font-size: 20px; background-color: var(--bg1);}
 a{ text-decoration: none; color: inherit; }
 button{ background: none; outline: none; border: none; font-family: var(--font2); }
 img{ display: block; }

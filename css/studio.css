@@ -1,0 +1,37 @@
+/*------------- Redefing root variables -------------*/
+:root{
+    --accent: #f00;
+    --bg1: #000;
+    --bg2: #111;
+    --bg3: #222;
+    --bg4: #333;
+    --txt1: #fff;
+    --txt2: #aaa;
+}
+
+/*------------ CB Studios Header -------------------*/
+header{ height: calc( 100vh - 60px );}
+header p{ width: 40vw; padding: 20px 0 30px;}
+header .btn1{margin-right: 20px;}
+
+header .images{ right: 0; width: 50%; height: 100%; top: 0;}
+header .image{ background-color: #aaa; width: 200px; height: 200px; position: absolute;}
+header .image:nth-of-type(1){ top: 20%; left: 10%; height: 300px;  background-color: #666;}
+header .image:nth-of-type(2){ top: 10%; left: 30%; width: 300px; background-color: #444;}
+header .image:nth-of-type(3){ top: 20%; right: 15%; height: 300px; background-color: #555;}
+header .image:nth-of-type(4){ top: 50%; left: 30%; width: 300px; background-color: #444;}
+
+/*------------- Player Section ---------------------*/
+.player{ height: 30vw; font-size: 50px;}
+.viewSection h6{padding: 20px 0 5px;}
+
+/*-----------------Videos Section--------------------*/
+.videos{ grid-template-columns: repeat(auto-fit, 260px); column-gap: 50px; row-gap: 50px;}
+.video img{width: 100%;}
+.video h4{font-size: 1rem; padding: 15px 0 2px;}
+.video p{font-size: 15px; color: var(--txt2);}
+
+/*-----------------Perk Section-----------------------*/
+.perkSection{ padding-bottom: 150px !important;}
+.perks{ grid-template-columns: 1fr 1fr 1fr 1fr; column-gap: 50px;}
+.perk{ height: 200px; background-color: #222;}
