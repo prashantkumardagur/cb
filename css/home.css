@@ -1,0 +1,49 @@
+header{ height: calc(100vh - 60px); }
+header p{ width: 40%; padding: 30px 0 60px;}
+header .btn2{ margin-left: 10px;}
+
+header .images{ right: 0; width: 50%; height: 100%; top: 0;}
+header .image{ background-color: #aaa; width: 200px; height: 200px; position: absolute;}
+header .image:nth-of-type(1){ top: 20%; left: 10%; height: 300px;  background-color: #999;}
+header .image:nth-of-type(2){ top: 10%; left: 30%; width: 300px; background-color: #bbb;}
+header .image:nth-of-type(3){ top: 20%; right: 15%; height: 300px; background-color: #aaa;}
+header .image:nth-of-type(4){ top: 50%; left: 30%; width: 300px; background-color: #bbb;}
+
+
+.services .grid{ grid-template-columns: 1fr 1fr 1fr 1fr; column-gap: 40px; row-gap: 40px;}
+.service{width: 100%; padding-top: 60%; border-radius: 20px; position: relative;
+        background-image: url("/resources/mainImg.jpg"); background-size: cover;}
+.service h5{bottom: 0; color: white; padding: 20px 25px; text-shadow: 0 0 10px black;}
+
+.recent .grid{ grid-template-columns: 3fr 2fr; column-gap: 50px; }
+.recent .grid img{ width: 100%;}
+.recent p{padding: 15px 0 30px;}
+
+.perks .grid:nth-of-type(1){ grid-template-columns: 1fr 1fr 1fr 1fr 1fr; column-gap: 50px;}
+.perks p{padding: 20px 0 50px;}
+.perk{ width: 100%; background-color: var(--bg2); border-radius: 10px; padding: 30px 10px;
+        text-align: center; font-size: 20px; font-family: var(--font1); font-weight: 700;}
+.perk .fas{display: block; font-size: 3.5rem; padding-bottom: 20px; background-clip: text;
+        background: -webkit-linear-gradient( 45deg, #00f7ff, #cc00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+
+.perks .grid:nth-of-type(2){ grid-template-columns: 1fr 1fr 1fr 1fr;}
+.stats{ border-right: 2px solid #444; }
+.stats:last-of-type{ border-right: none;}
+.stats span{ font-size: 2rem;}
+
+.outer{ width: 100%;}
+.outer > .grid{ grid-template-columns: 1fr 1fr 1fr; column-gap: 50px; width: 100%; }
+.review{ width: 100%; background-color: var(--bg2); border-radius: 10px; padding: 30px;}
+.review .grid{ grid-template-columns: 50px auto; column-gap: 10px;}
+.review img{ height: 50px; width: 50px; border-radius: 50%;}
+.review > p{ padding: 15px 0 5px;}
+
+.topEvents .grid{ grid-template-columns: 1fr 1fr; column-gap: 100px;}
+.topEvents article img{ width: 100%; border-radius: 20px;}
+.topEvents article p{ padding: 10px 0 20px;}
+
+.ending{ overflow: hidden; padding-bottom: 150px;}
+.ending h3{ left: 0; font-size: 12vw; color: #eee; }
+.ending .svgplace{ height: 300px; width: 20%; margin: auto; background-color: #aaa4;}
+.ending .h2{padding-bottom: 20px;}
+.ending a{margin: 0 10px;}

@@ -1,0 +1,46 @@
+/*---------------- Color Variables ------------------*/
+:root{
+    --accent: #0652dd;
+    --bg1: #fff;
+    --bg2: #deebff;
+    --bg3: #eee;
+    --bg4: #ddd;
+    --txt1: #000;
+    --txt2: #333;
+    --font1: Roboto;
+    --font2: Poppins;
+    font-size: 20px;
+}
+
+/*-------------- Basic Classes ------------------*/
+.accent{ color: var(--accent); }
+.bg1{ background-color: var(--bg1); }
+.bg2{ background-color: var(--bg2); }
+.bg3{ background-color: var(--bg3); }
+.bg4{ background-color: var(--bg4);}
+.txt1{ color: var(--txt1); }
+.txt2{ color: var(--txt2); }
+.font1{ font-family: var(--font1) !important; }
+.font2{ font-family: var(--font2) !important; }
+
+/*-------------- Custom CSS Rule Classes -------------*/
+.rel{ position: relative; }
+.abs{ position: absolute; }
+.flex{ display: flex; }
+.flexwrap{ flex-wrap: wrap; }
+.grid{ display: grid; }
+.hide{ display: none; }
+.ralign{ text-align: right; }
+.justify{ text-align: justify; }
+.ptr{ cursor: pointer; }
+.center{ text-align: center; justify-content: center;}
+.vcenter{ align-items: center;}
+.acenter{ text-align: center; place-items: center; place-content: center;}
+
+/*-------------- HTML Element Basic ---------------*/
+*{ padding: 0; margin: 0; box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+body{ cursor: default; font-family: var(--font2); font-size: 20px;}
+a{ text-decoration: none; color: inherit; }
+button{ background: none; outline: none; border: none; font-family: var(--font2); }
+img{ display: block; }
