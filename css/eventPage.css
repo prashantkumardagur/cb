@@ -1,6 +1,7 @@
 header{ height: calc( 100vh - 60px ); grid-template-columns: 1fr 1fr;}
-header .eventImage{ background: url(/resources/mainImg.jpg); background-size: cover; background-position: center;}
+header .eventImage{ background: url(/resources/mainImg.jpg); background-size: cover; background-position: center; max-height: 100%;}
 header h2{letter-spacing: 1px; text-transform: uppercase;}
+header .pad{max-height: calc( 100vh - 60px );}
 
 /*--------------Photo Section ------------------------*/
 .photos{grid-template-columns: repeat(auto-fit, 200px); column-gap: 20px; row-gap: 20px;}

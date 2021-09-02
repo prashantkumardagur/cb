@@ -1,8 +1,8 @@
 <?php
 
     include("eventData.php");
-    $event = $eventData[0];
-    $relatedCards = array(12,2,14,7);
+    $event = $eventData[10];
+    $relatedCards = array(8,10,6,5);
     include("eventPage.php");
 
 ?>
