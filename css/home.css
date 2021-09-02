@@ -17,7 +17,7 @@ header .image:nth-of-type(4){ top: 50%; left: 30%; width: 300px; background-colo
 .service h5{bottom: 0; color: white; padding: 20px 25px; text-shadow: 0 0 10px black;}
 
 /*---------------- Recent Area section -----------------------*/
-.recent .grid{ grid-template-columns: 3fr 2fr; column-gap: 50px; }
+.recent > .grid{ grid-template-columns: 3fr 2fr; column-gap: 50px; }
 .recent .grid img{ width: 100%;}
 .recent p{padding: 15px 0 30px;}
 
@@ -27,7 +27,7 @@ header .image:nth-of-type(4){ top: 50%; left: 30%; width: 300px; background-colo
 .perk{ width: 100%; background-color: var(--bg2); border-radius: 10px; padding: 30px 10px;
         text-align: center; font-size: 20px; font-family: var(--font1); font-weight: 700;}
 .perk .fas{display: block; font-size: 3.5rem; padding-bottom: 20px; background-clip: text;
-        background: -webkit-linear-gradient( 45deg, #00f7ff, #cc00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+        background: -webkit-linear-gradient( 45deg, #00a2ff, #ff00d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
 
 .perks .grid:nth-of-type(2){ grid-template-columns: 1fr 1fr 1fr 1fr;}
 .stats{ border-right: 2px solid #444; }
@@ -43,13 +43,13 @@ header .image:nth-of-type(4){ top: 50%; left: 30%; width: 300px; background-colo
 .review > p{ padding: 15px 0 5px;}
 
 /*-------------------- Top events section -----------------------*/
-.topEvents .grid{ grid-template-columns: 1fr 1fr; column-gap: 100px;}
+.topEvents > .grid{ grid-template-columns: 1fr 1fr; column-gap: 100px;}
 .topEvents article img{ width: 100%; border-radius: 20px;}
 .topEvents article p{ padding: 10px 0 20px;}
 
 /*--------------------- Last section ---------------------------*/
 .ending{ overflow: hidden; padding-bottom: 150px;}
 .ending h3{ left: 0; font-size: 12vw; color: #eee; }
-.ending .svgplace{ height: 300px; width: 20%; margin: auto; background-color: #aaa4;}
+.ending .svgplace{ height: 300px; width: 25%; margin: auto; padding-top: 40px;}
 .ending .h2{padding-bottom: 20px;}
 .ending a{margin: 0 10px;}

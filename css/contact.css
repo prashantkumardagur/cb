@@ -1,0 +1,5 @@
+header .grid{ grid-template-columns: 1fr 1fr;}
+header p{padding-bottom: 10px;}
+.contact{ padding: 15px 20px; background-color: var(--bg4); border-radius: 20px; display: block; transition: 0.2s; font-weight: 500;}
+.contact .fas{ color: var(--accent);}
+.contact:hover{ background-color: #ccc;}

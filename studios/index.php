@@ -34,66 +34,19 @@
             </div>
         </header>
 
-        <div class="viewSection pad">
-            <div class="player bg3 flex vcenter center txt2" id="player"><i class="fas fa-play-circle"></i></div>
-            <h2 class="h4 mar30" id="vidTitle">This is the title of the video.</h2>
-            <p class="p2 txt2" id="vidBy">by Someone Anonymous</p>
-            <p class="p2 txt2" id="vidDate">30 Feb 2050</p>
-            <h6 class="h6 w500" id="vidGenre">Genre: Something</h6>
-            <p class="p4 txt2" id="vidDiscription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non nemo, eligendi tempore repellat aliquam officia provident obcaecati vero corporis rem natus iure aperiam, porro mollitia explicabo. Eligendi accusamus voluptas dolorem natus perferendis in aspernatur culpa laboriosam architecto obcaecati voluptates assumenda veritatis adipisci atque suscipit magnam ipsam quas, voluptatibus quasi ullam eius quam temporibus nemo id! Consequuntur numquam provident rerum quasi dicta quas hic quia cupiditate, veniam qui aliquid sed aliquam laboriosam ipsum quae corrupti fuga modi ad nam tenetur odio quam? Magnam id et laudantium. Quo, iure commodi nemo molestias id voluptatibus tempore minus! Earum magni tenetur cumque? Temporibus, doloribus?</p>
+        <div class="viewSection pad hide" id="viewSection">
+            <iframe class="player" id="vidPlayer" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2 class="h4 mar30" id="vidTitle"></h2>
+            <p class="p2 txt2" id="vidBy"></p>
+            <p class="p2 txt2" id="vidDate"></p>
+            <h6 class="h6 w500" id="vidGenre"></h6>
+            <p class="p4 txt2" id="vidDescription"></p>
         </div>
 
         <main class="pad bg3">
             <h2 class="h3">Creative Beast Studio Releases<div class="hline"></h2>
-            <div class="videos grid flexwrap mar60">
-                <div class="video">
-                    <img src="/resources/mainImg.jpg" alt="Thumbnail">
-                    <h4>Video Title</h4>
-                    <p>By Someone anonymous</p>
-                    <p>30 Feb 2050</p>
-                </div>
-                <div class="video">
-                    <img src="/resources/mainImg.jpg" alt="Thumbnail">
-                    <h4>Video Title</h4>
-                    <p>By Someone anonymous</p>
-                    <p>30 Feb 2050</p>
-                </div>
-                <div class="video">
-                    <img src="/resources/mainImg.jpg" alt="Thumbnail">
-                    <h4>Video Title</h4>
-                    <p>By Someone anonymous</p>
-                    <p>30 Feb 2050</p>
-                </div>
-                <div class="video">
-                    <img src="/resources/mainImg.jpg" alt="Thumbnail">
-                    <h4>Video Title</h4>
-                    <p>By Someone anonymous</p>
-                    <p>30 Feb 2050</p>
-                </div>
-                <div class="video">
-                    <img src="/resources/mainImg.jpg" alt="Thumbnail">
-                    <h4>Video Title</h4>
-                    <p>By Someone anonymous</p>
-                    <p>30 Feb 2050</p>
-                </div>
-                <div class="video">
-                    <img src="/resources/mainImg.jpg" alt="Thumbnail">
-                    <h4>Video Title</h4>
-                    <p>By Someone anonymous</p>
-                    <p>30 Feb 2050</p>
-                </div>
-                <div class="video">
-                    <img src="/resources/mainImg.jpg" alt="Thumbnail">
-                    <h4>Video Title</h4>
-                    <p>By Someone anonymous</p>
-                    <p>30 Feb 2050</p>
-                </div>
-                <div class="video">
-                    <img src="/resources/mainImg.jpg" alt="Thumbnail">
-                    <h4>Video Title</h4>
-                    <p>By Someone anonymous</p>
-                    <p>30 Feb 2050</p>
-                </div>
+            <div class="videos grid flexwrap mar60" id="vidList">
+                <!-- Content added by javascript -->
             </div>
         </main>
 
@@ -114,6 +67,6 @@
 
     </div>
 
-
+    <script src="/studios/studio.js"></script>
 </body>
 </html>

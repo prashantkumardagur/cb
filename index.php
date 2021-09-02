@@ -1,3 +1,8 @@
+    <?php
+        include("events/eventData.php");
+        $currentEvent = 14;
+        $me1 =14; $me2=0;
+    ?>
     <?php include("elements/head.html") ?>
 
     <title>Creative Beast EMS - Event Management Services - Home Page </title>
@@ -13,12 +18,12 @@
         <script>document.getElementById("navId1").classList.add("activeNav");</script>
 
         <header class="bg3 pad2 rel">
-            <h1 class="h1 pad90">Have an <span class="accent">Event</span><br/>to be <span class="accent">organised</span>?</h1>
-            <p class="p2">
+            <h1 class="h1 pad90">We <span class="accent">organise events</span> that<br/> leave long-lasting <br/><span class="accent">memories.</span></h1>
+            <p class="p3">
                 Implementing your Creative thoughts into real action to help society with a Beast like passion, 
                 power and dedication by its spectacular work to remember forever.
             </p>
-            <a href="#" class="btn1">Plan your event</a>
+            <a href="/contact/" class="btn1">Plan your event</a>
             <a href="#" class="btn2">View Events</a>
 
             <div class="images abs">
@@ -45,19 +50,19 @@
             <h2 class="h3"><span class="accent">Current</span> Events <div class="hline"></div></h2>
             <div class="grid mar90">
                 <div>
-                    <h4 class="h1">Event Name</h4>
-                    <p class="p3 txt2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum esse ut tempora quod temporibus, illo ab explicabo odio dicta dolore repellendus quidem in distinctio eveniet odit quaerat quam quas excepturi sed eos voluptates adipisci. In tempore dolores laboriosam beatae molestiae dicta, similique expedita corrupti autem fugit ut, sunt placeat provident!</p>
-                    <div class="p2 w500"><i class="fas fa-map-marker-alt accent"></i> Lovely Professional University</div>
-                    <div class="p2 w500"><i class="fas fa-calendar-check accent"></i> 30 Feb 2050</div>
-                    <a href="#" class="btn1 mar30">Know More</a>
+                    <h4 class="h1"><?php echo $eventData[$currentEvent]["name"] ?></h4>
+                    <p class="p3 txt2"><?php echo $eventData[$currentEvent]["intro"] ?></p>
+                    <div class="p2 w500"><i class="fas fa-map-marker-alt accent"></i> <?php echo $eventData[$currentEvent]["location"] ?></div>
+                    <div class="p2 w500"><i class="fas fa-calendar-check accent"></i> <?php echo $eventData[$currentEvent]["date"] ?></div>
+                    <a href="<?php echo $eventData[$currentEvent]["link"] ?>" class="btn1 mar30">Know More</a>
                 </div>
-                <img class="rc2" src="/resources/mainImg.jpg" alt="Event Image">
+                <img class="rc2" src="<?php echo $eventData[$currentEvent]["image"] ?>" alt="Event Image">
             </div>
 
             <div class="other mar90">
                 <h3 class="h4">Other <span class="accent">Recent</span> Events <div class="hline"></div></h3>
                 
-                <?php include("elements/eventCards.php") ?>
+                <?php displayCards(array(14,10,8,6)) ?>
 
             </div>
         </div>
@@ -149,34 +154,34 @@
             <h3 class="h2">Our <span class="accent">Esteemed</span> Events <div class="hline"></div></h3>
             <div class="grid mar90">
                 <article>
-                    <img src="/resources/mainImg.jpg" alt="Event Image">
-                    <h4 class="h3 mar30">Event Name</h4>
-                    <p class="p4 txt2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, iste nesciunt quia tempora dignissimos culpa, repellendus minima consequatur in laboriosam iusto odit explicabo voluptates enim maxime doloremque error? Minus placeat aliquam reiciendis suscipit assumenda velit eius ducimus quae temporibus! Odit eveniet, sunt sapiente dicta reiciendis repudiandae quidem debitis! Nobis, saepe.</p>
-                    <div class="p3 w500"><i class="fas fa-map-marker-alt accent"></i> Lovely Professional University</div>
-                    <div class="p3 w500"><i class="fas fa-calendar-check accent"></i> 30 Feb 2050</div>
-                    <a href="#" class="btn3 mar30">Know More <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
+                    <img src="<?php echo $eventData[$me1]["image"] ?>" alt="Event Image">
+                    <h4 class="h3 mar30"><?php echo $eventData[$me1]["name"] ?></h4>
+                    <p class="p4 txt2"><?php echo $eventData[$me1]["intro"] ?></p>
+                    <div class="p3 w500"><i class="fas fa-map-marker-alt accent"></i> <?php echo $eventData[$me1]["location"] ?></div>
+                    <div class="p3 w500"><i class="fas fa-calendar-check accent"></i> <?php echo $eventData[$me1]["date"] ?></div>
+                    <a href="<?php echo $eventData[$me1]["link"] ?>" class="btn3 mar30">Know More <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
                 </article>
                 <article>
-                    <img src="/resources/mainImg.jpg" alt="Event Image">
-                    <h4 class="h3 mar30">Event Name</h4>
-                    <p class="p4 txt2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, iste nesciunt quia tempora dignissimos culpa, repellendus minima consequatur in laboriosam iusto odit explicabo voluptates enim maxime doloremque error? Minus placeat aliquam reiciendis suscipit assumenda velit eius ducimus quae temporibus! Odit eveniet, sunt sapiente dicta reiciendis repudiandae quidem debitis! Nobis, saepe.</p>
-                    <div class="p3 w500"><i class="fas fa-map-marker-alt accent"></i> Lovely Professional University</div>
-                    <div class="p3 w500"><i class="fas fa-calendar-check accent"></i> 30 Feb 2050</div>
-                    <a href="#" class="btn3 mar30">Know More <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
+                    <img src="<?php echo $eventData[$me2]["image"] ?>" alt="Event Image">
+                    <h4 class="h3 mar30"><?php echo $eventData[$me2]["name"] ?></h4>
+                    <p class="p4 txt2"><?php echo $eventData[$me2]["intro"] ?></p>
+                    <div class="p3 w500"><i class="fas fa-map-marker-alt accent"></i> <?php echo $eventData[$me2]["location"] ?></div>
+                    <div class="p3 w500"><i class="fas fa-calendar-check accent"></i> <?php echo $eventData[$me2]["date"] ?></div>
+                    <a href="<?php echo $eventData[$me2]["link"] ?>" class="btn3 mar30">Know More <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
                 </article>
             </div>
 
             <div class="other mar90">
                 <h3 class="h4">Other <span class="accent">Great</span> Events <div class="hline"></div></h3>
                 
-                <?php include("elements/eventCards.php") ?>
+                <?php displayCards(array(14,13,12,11)) ?>
 
             </div>
         </div>
 
         <div class="ending pad rel center">
             <h3 class="font2 abs">CREATIVE BEAST</h3>
-            <div class="svgplace rel"></div>
+            <div class="svgplace rel"><?php include("resources/svg.svg") ?></div>
             <h4 class="h2" style="margin: auto;"><span class="accent">Interested</span> in our company to <span class="accent">Organise</span> your <span class="accent">Event</span></h4>
             <p class="p2">There is no need to wait for the opportunity to come when you can create one.</p>
             <p class="p2">Creative Beast is always ready to assist you with fullest of our ability.</p>

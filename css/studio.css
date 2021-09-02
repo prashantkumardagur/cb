@@ -22,14 +22,16 @@ header .image:nth-of-type(3){ top: 20%; right: 15%; height: 300px; background-co
 header .image:nth-of-type(4){ top: 50%; left: 30%; width: 300px; background-color: #444;}
 
 /*------------- Player Section ---------------------*/
-.player{ height: 30vw; font-size: 50px;}
+.player{ width: 80vw; height: 45vw; font-size: 50px;}
 .viewSection h6{padding: 20px 0 5px;}
 
 /*-----------------Videos Section--------------------*/
-.videos{ grid-template-columns: repeat(auto-fit, 260px); column-gap: 50px; row-gap: 50px;}
+.videos{ grid-template-columns: repeat(auto-fit, 300px); column-gap: 10px; row-gap: 10px;}
+.video{padding: 20px;}
 .video img{width: 100%;}
-.video h4{font-size: 1rem; padding: 15px 0 2px;}
+.video h4{font-size: 1rem; padding: 15px 0 2px; line-height: 100%;}
 .video p{font-size: 15px; color: var(--txt2);}
+.video:hover{ background-color: #111;}
 
 /*-----------------Perk Section-----------------------*/
 .perkSection{ padding-bottom: 150px !important;}
