@@ -1,0 +1,17 @@
+header{ grid-template-columns: 1fr 400px; column-gap: 50px;}
+header img{ width: 300px; margin: 30px auto;}
+header i{font-size: 40px;}
+
+.knownFor .grid{ grid-template-columns: 1fr 1fr; column-gap: 5vw; row-gap: 30px;}
+.venture{padding: 20px; border-radius: 20px; grid-template-columns: 120px 1fr !important; column-gap: 30px !important; align-items: center;}
+.venture img{width: 120px; margin: auto;}
+.people{height: 200px;}
+.leader{ padding: 20px; grid-template-columns: 180px 1fr !important; column-gap: 30px !important;}
+.leader img{width: 100%;}
+.aboutCB .grid{ grid-template-columns: 1fr 1fr; column-gap: 100px;}
+.something{color: #ffbbbb;}
+
+@media screen and (max-width: 500px) {
+    .knownFor .grid{grid-template-columns: 1fr;}
+    .venture{ column-gap: 20px !important;}
+}

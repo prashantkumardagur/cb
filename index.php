@@ -1,7 +1,7 @@
     <?php
         include("events/eventData.php");
         $currentEvent = 14;
-        $me1 =14; $me2=0;
+        $me1 =14; $me2=12;
     ?>
     <?php include("elements/head.html") ?>
 
@@ -18,20 +18,22 @@
         <script>document.getElementById("navId1").classList.add("activeNav");</script>
 
         <header class="bg3 pad2 rel">
-            <h1 class="h1 pad90">We <span class="accent">organise events</span> that<br/> leave long-lasting <br/><span class="accent">memories.</span></h1>
-            <p class="p3">
-                Implementing your Creative thoughts into real action to help society with a Beast like passion, 
-                power and dedication by its spectacular work to remember forever.
-            </p>
-            <a href="/contact/" class="btn1">Plan your event</a>
-            <a href="#" class="btn2">View Events</a>
-
-            <div class="images abs">
+            
+            <div class="images">
                 <div class="image"></div>
                 <div class="image"></div>
                 <div class="image"></div>
                 <div class="image"></div>
             </div>
+
+            <h1 class="h1 pad90">We <span class="accent">organise events</span> that leave long-lasting <span class="accent">memories.</span></h1>
+            <p class="p3">
+                Implementing your Creative thoughts into real action to help society with a Beast like passion, 
+                power and dedication by its spectacular work to remember forever.
+            </p>
+            <a href="/contact/" class="btn1">Plan your event</a>
+            <a href="/events/" class="btn2">View Events</a>
+
         </header>
 
         <div class="services pad">
@@ -49,13 +51,13 @@
         <div class="recent pad bg2">
             <h2 class="h3"><span class="accent">Current</span> Events <div class="hline"></div></h2>
             <div class="grid mar90">
-                <div>
+                <div style="grid-area: recentContent;">
                     <h4 class="h1"><?php echo $eventData[$currentEvent]["name"] ?></h4>
                     <p class="p3 txt2"><?php echo $eventData[$currentEvent]["intro"] ?></p>
                     <div class="p2 w500"><i class="fas fa-map-marker-alt accent"></i> <?php echo $eventData[$currentEvent]["location"] ?></div>
                     <div class="p2 w500"><i class="fas fa-calendar-check accent"></i> <?php echo $eventData[$currentEvent]["date"] ?></div>
                     <a href="<?php echo $eventData[$currentEvent]["link"] ?>" class="btn1 mar30">Know More</a>
-                </div>
+                </div>                
                 <img class="rc2" src="<?php echo $eventData[$currentEvent]["image"] ?>" alt="Event Image">
             </div>
 
@@ -74,7 +76,7 @@
                 <div class="perk"><i class="fas fa-hand-holding-usd"></i>Cost efficient</div>
                 <div class="perk"><i class="fas fa-user-friends"></i>Support</div>
                 <div class="perk"><i class="fas fa-award"></i>Experience</div>
-                <div class="perk"><i class="fas fa-paint-brush"></i>Custom Theming</div>
+                <div class="perk notForMobile"><i class="fas fa-paint-brush"></i>Custom Theming</div>
                 <div class="perk"><i class="fas fa-globe"></i>Media Coverage</div>
             </div>
 
@@ -90,7 +92,7 @@
 
         <div class="testimonials pad">
             <h4 class="h3">Few <span class="accent">Words</span> from our <span class="accent">precious clients</span> ... <div class="hline"></div></h4>
-            <div class="outer hidden mar60">
+            <div class="outer mar60">
                 <div class="grid">
                     <div class="review">
                         <div class="grid">
@@ -148,12 +150,13 @@
                     </div>
                 </div>
             </div>
+            <p class="p3 center forMobileOnly"><i class="fas fa-caret-left"></i> Swipe to see more <i class="fas fa-caret-right" style="margin-left: 10px;"></i></p>
         </div>
 
         <div class="topEvents pad bg2">
             <h3 class="h2">Our <span class="accent">Esteemed</span> Events <div class="hline"></div></h3>
-            <div class="grid mar90">
-                <article>
+            <div class="grid">
+                <article class="mar90">
                     <img src="<?php echo $eventData[$me1]["image"] ?>" alt="Event Image">
                     <h4 class="h3 mar30"><?php echo $eventData[$me1]["name"] ?></h4>
                     <p class="p4 txt2"><?php echo $eventData[$me1]["intro"] ?></p>
@@ -161,7 +164,7 @@
                     <div class="p3 w500"><i class="fas fa-calendar-check accent"></i> <?php echo $eventData[$me1]["date"] ?></div>
                     <a href="<?php echo $eventData[$me1]["link"] ?>" class="btn3 mar30">Know More <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
                 </article>
-                <article>
+                <article class="mar90">
                     <img src="<?php echo $eventData[$me2]["image"] ?>" alt="Event Image">
                     <h4 class="h3 mar30"><?php echo $eventData[$me2]["name"] ?></h4>
                     <p class="p4 txt2"><?php echo $eventData[$me2]["intro"] ?></p>
@@ -183,13 +186,13 @@
             <h3 class="font2 abs">CREATIVE BEAST</h3>
             <div class="svgplace rel"><?php include("resources/svg.svg") ?></div>
             <h4 class="h2" style="margin: auto;"><span class="accent">Interested</span> in our company to <span class="accent">Organise</span> your <span class="accent">Event</span></h4>
-            <p class="p2">There is no need to wait for the opportunity to come when you can create one.</p>
-            <p class="p2">Creative Beast is always ready to assist you with fullest of our ability.</p>
+            <p class="p3">There is no need to wait for the opportunity to come when you can create one.</p>
+            <p class="p3">Creative Beast is always ready to assist you with fullest of our ability.</p>
 
             <div class="mar60">
                 <a href="#" class="btn2">About Us</a>
-                <a href="#" class="btn2">CB Studios</a>
-                <a href="#" class="btn1">Plan Your Event</a>
+                <a href="#" class="btn2">CB Studios</a><br class="forMobileOnly" />
+                <a href="#" class="btn1">Plan Your Event</a><br class="forMobileOnly" />
                 <a href="#" class="btn2">Hunar</a>
                 <a href="#" class="btn2">All Events</a>
             </div>

@@ -5,6 +5,8 @@
 .h4{ font-size: 1.5rem;}
 .h5{ font-size: 1.2rem;}
 .h6{ font-size: 1rem;}
+.ch{ letter-spacing: 1px;}
+
 .p1{ font-size: 1rem;}
 .p2{ font-size: 0.9rem;}
 .p3{ font-size: 0.8rem;}
@@ -23,6 +25,7 @@
 .mar30{ margin-top: 30px;}
 .mar60{ margin-top: 60px;}
 .mar90{ margin-top: 90px;}
+.pad15{ padding-top: 15px;}
 .pad30{ padding-top: 30px;}
 .pad60{ padding-top: 60px;}
 .pad90{ padding-top: 90px;}
@@ -31,23 +34,24 @@
 .rc50{border-radius: 50%;}
 .fas{ margin-right: 10px;}
 
+.container{margin-top: 60px;}
+
 .btn1, .btn2{ border-radius: 10px; font-weight: 600; font-size: 0.9rem; display: inline-block;}
 .btn1{ background-color: var(--accent); padding: 6px 25px; color: white;}
 .btn2{ padding: 4px 25px; border: 3px solid var(--accent);}
 .btn3{ color: var(--accent); font-weight: 600; display: inline-block;}
 .hline{ height: 10px; width: 40%; background-color: var(--accent); border-radius: 5px; margin-top: 10px;}
 
-.iconHolder{display: inline-flex; height: 40px; width: 40px; background-color: var(--bg1); transition: 0.2s;
-            justify-content: center; align-items: center; border-radius: 50%; margin-right: 10px;}
+.iconHolder{display: inline-flex !important; height: 40px; width: 40px !important; background-color: var(--bg1); transition: 0.2s;
+            justify-content: center; align-items: center; border-radius: 50%; margin-right: 10px; font-size: 24px !important; padding-bottom: 0 !important;}
 .iconHolder .fas{margin: 0;}
 .socialMedia .iconHolder:hover{background-color: var(--txt1);}
-.socialMedia { margin-top: 10px; font-size: 24px;}
 
 .eventCards{ font-family: var(--font1); text-align: center; grid-template-columns: repeat(auto-fit, 240px); column-gap: 30px; row-gap: 30px;}
 .eventCard{ width: 240px; border-radius: 10px; overflow: hidden; background-color: white; box-shadow: 0px 10px 30px rgb(174, 204, 230);}
 .eventCard img{ width: 100%; height: 144px;}
 .eventCard h6{ font-size: 22px; padding: 10px 5px 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-.eventCard p{ font-size: 15px; padding: 0 5px !important; color: #333;}
+.eventCard p{ font-size: 15px; padding: 0 10px 0 !important; color: #333;}
 .eventCard a{ font-size: 16px; color: var(--accent); font-weight: 600; padding: 15px 5px; font-family: var(--font2); display: inline-block;}
 .eventCard .fas{margin: 0 0 0 5px;}
 
@@ -55,7 +59,7 @@
 .offerSection .h2{padding-bottom: 20px;}
 .offerSection .btn1{margin-top: 50px;}
 
-nav{ width: 100%; height: 60px; box-shadow: 0 0 30px #0001; z-index: 10; }
+nav{ width: 100%; height: 60px; box-shadow: 0 0 30px #0002; z-index: 10; position: fixed; background-color: var(--bg1); top: 0;}
 nav img{ height: 40px; margin-right: 10px;}
 .navlinks{ right: 5%;}
 .navlinks a{ font-size: 0.8rem; font-family: var(--font1); font-weight: 500; padding: 10px 0; margin-left: 30px; color: var(--txt2);}
@@ -64,7 +68,56 @@ nav img{ height: 40px; margin-right: 10px;}
 
 footer{ padding: 60px 0 0;}
 footer img{top: 0; margin: auto; width: 100px; left: 50%; transform: translate(-50%, -50%);}
-footer h5{margin-bottom: 10px; font-size: 16px; color: var(--accent); font-weight: 600;}
-footer .grid{ grid-template-columns: 1fr 1fr 1fr 1fr;}
-footer .grid a{display: block; font-size: 14px; padding-bottom: 2px; width: fit-content; color: var(--txt2);}
+footer h5{margin-bottom: 10px; font-size: 16px; color: var(--accent); font-weight: 600; margin-top: 30px;}
+footer .grid{ grid-template-columns: 1fr 1fr 1fr 1fr; column-gap: 80px;}
+footer .grid a{display: block; font-size: 14px; padding-bottom: 2px; width: fit-content; color: var(--txt2); font-weight: 500;}
+footer .grid a:hover{color: var(--txt1); font-weight: 600;}
+footer .span2{ grid-column: span 2;}
 .copyright{ padding: 30px; text-align: center;}
+
+
+@media screen and (max-width: 500px){
+    .grid{grid-template-columns: 1fr;}
+    .notForMobile{display: none;}
+
+    .h1{ font-size: 2.2rem;}
+    .h2{ font-size: 1.8rem;}
+    .h3{ font-size: 1.4rem;}
+    .h4{ font-size: 1.2rem;}
+    .h5{ font-size: 1rem;}
+    .h6{ font-size: 0.9rem;}
+
+    .btn1, .btn2{ font-size: 0.8rem;}
+    .hline{ height: 8px;}
+    .mar30{margin-top: 20px;}
+    .mar60{margin-top: 40px;}
+    .mar90{margin-top: 70px;}
+    .pad15{ padding-top: 10px;}
+    .pad30{ padding-top: 20px;}
+    .pad60{ padding-top: 40px;}
+    .pad90{ padding-top: 60px;}
+
+    .eventCards{text-align: left; row-gap: 20px;}
+    .eventCard{ width: 100%; display: flex; height: 90px;}
+    .eventCard img{height: 90px; width: 150px !important;}
+    .eventCard h6{font-size: 20px; padding: 10px 5px 0 10px; max-width: calc(90vw - 150px);}
+    .eventCard a{padding: 6px 5px 0 10px;}
+
+    .navLines{ right: 5vw; flex-direction: column; align-items: flex-end;}
+    .navLines span{ display: block; height: 4px; background-color: var(--txt1); border-radius: 5px;}
+    .navLines span:nth-of-type(1){ width: 25px;}
+    .navLines span:nth-of-type(2){ width: 32px; margin: 5px 0;}
+    .navLines span:nth-of-type(3){ width: 20px;}
+    .navlinks{display: block; position: fixed; top: 60px; width: 100vw; left: -120vw; height: calc(100vh - 60px); 
+        background-color: var(--bg1); padding-top: 10px; transition: 0.2s;}
+    .navlinks a{display: block; font-size: 1.2rem; margin-left: 5vw;}
+    .navlinks .activeNav::before{content: ''; position: absolute; height: 100%; width: 5px; top: 0; left: -5vw; background-color: var(--accent);}
+
+    footer .grid{ grid-template-columns: 1fr 1fr; column-gap: 50px;}
+
+}
+
+
+@media screen and (min-width: 500px) {
+    .forMobileOnly{display: none;}
+}

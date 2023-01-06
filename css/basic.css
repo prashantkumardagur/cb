@@ -36,6 +36,7 @@
 .center{ text-align: center; justify-content: center;}
 .vcenter{ align-items: center;}
 .acenter{ text-align: center; place-items: center; place-content: center;}
+.italic{ font-style: italic;}
 
 /*-------------- HTML Element Basic ---------------*/
 *{ padding: 0; margin: 0; box-sizing: border-box; }

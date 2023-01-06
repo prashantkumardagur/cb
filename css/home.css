@@ -1,9 +1,10 @@
 /*----------- Home Page Header -----------------------------*/
 header{ height: calc(100vh - 60px); }
+header h1{ width: 50% !important;}
 header p{ width: 40%; padding: 30px 0 60px;}
 header .btn2{ margin-left: 10px;}
 
-header .images{ right: 0; width: 50%; height: 100%; top: 0;}
+header .images{ right: 0; width: 50%; height: 100%; top: 0; position: absolute;}
 header .image{ background-color: #aaa; width: 200px; height: 200px; position: absolute;}
 header .image:nth-of-type(1){ top: 20%; left: 10%; height: 300px;  background-color: #999;}
 header .image:nth-of-type(2){ top: 10%; left: 30%; width: 300px; background-color: #bbb;}
@@ -17,8 +18,8 @@ header .image:nth-of-type(4){ top: 50%; left: 30%; width: 300px; background-colo
 .service h5{bottom: 0; color: white; padding: 20px 25px; text-shadow: 0 0 10px black;}
 
 /*---------------- Recent Area section -----------------------*/
-.recent > .grid{ grid-template-columns: 3fr 2fr; column-gap: 50px; }
-.recent .grid img{ width: 100%;}
+.recent > .grid{ grid-template-columns: 3fr 2fr; column-gap: 50px; grid-template-areas: "recentContent recentImage";}
+.recent .grid img{ width: 100%; grid-area: recentImage;}
 .recent p{padding: 15px 0 30px;}
 
 /*-------------------- Perks section ------------------------*/
@@ -35,7 +36,7 @@ header .image:nth-of-type(4){ top: 50%; left: 30%; width: 300px; background-colo
 .stats span{ font-size: 2rem;}
 
 /*---------------------  Testimonial section --------------------------*/
-.outer{ width: 100%;}
+.outer{ width: 100%; overflow: hidden;}
 .outer > .grid{ grid-template-columns: 1fr 1fr 1fr; column-gap: 50px; width: 100%; }
 .review{ width: 100%; background-color: var(--bg2); border-radius: 10px; padding: 30px;}
 .review .grid{ grid-template-columns: 50px auto; column-gap: 10px;}
@@ -53,3 +54,36 @@ header .image:nth-of-type(4){ top: 50%; left: 30%; width: 300px; background-colo
 .ending .svgplace{ height: 300px; width: 25%; margin: auto; padding-top: 40px;}
 .ending .h2{padding-bottom: 20px;}
 .ending a{margin: 0 10px;}
+
+
+@media screen and (max-width: 500px) {
+        header{ height: auto; padding-bottom: 60px !important;}
+        header .images{ position: relative; height: 34vh; width: 100%;}
+        header .image{ height: 120px; width: 120px;}
+        header .image:nth-of-type(1){ height: 180px;}
+        header .image:nth-of-type(2){ width: 180px;}
+        header .image:nth-of-type(3){ height: 180px; right: 5%;}
+        header .image:nth-of-type(4){ width: 180px; top: 60%;}  
+        header h1{ width: 100% !important;}
+        header p{width: 100%; padding: 20px 0;}
+        header .btn2{margin-left: 5px; margin-top: 20px;}
+
+        .services .grid{ grid-template-columns: 1fr 1fr; column-gap: 10px; row-gap: 10px;}
+        .service h5{ padding: 10px 15px;}
+
+        .recent > .grid{ grid-template-columns: 1fr; grid-template-areas: "recentImage" "recentContent";}
+        .recent h4{margin-top: 30px;}
+
+        .perks .grid:nth-of-type(1){grid-template-columns: 1fr 1fr; column-gap: 30px; row-gap: 20px;}
+        .perks .grid:nth-of-type(2){grid-template-columns: 1fr 1fr; row-gap: 40px; column-gap: 20px;}
+        .stats{border-right: none;}
+
+        .outer{overflow-x: scroll; padding-bottom: 20px;}
+        .outer > .grid{ width: 264%; column-gap: 2%;}
+        .review{width: 100%;}
+
+        .topEvents > .grid{ grid-template-columns: 1fr;}
+
+        .ending .svgplace{ width: 60%; height: 240px;}
+        .ending a{margin: 0 10px 10px;}
+}

@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/basic.css">
-    <link rel="stylesheet" href="/css/studio.css">
     <link rel="stylesheet" href="/css/elements.css">
+    <link rel="stylesheet" href="/css/studio.css">
 
     <title>CB Studios - Creative Beast - Home</title>
 </head>
@@ -21,17 +21,18 @@
         <script>document.getElementById("navId3").classList.add("activeNav");</script>
 
         <header class="pad bg2 rel">
-            <h2 class="h2">An <span class="accent">open platform</span> to<br/><span class="accent">showcase your talents</span> to<br/>the open world.</h2>
-            <p class="p3 txt2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ea doloribus culpa laboriosam repellendus, nesciunt omnis modi aliquid veritatis voluptates.</p>
-            <a href="#" class="btn1">Participate Now</a>
-            <a href="#" class="btn2">YouTube Page</a>
             
-            <div class="images abs">
+            <div class="images">
                 <div class="image"></div>
                 <div class="image"></div>
                 <div class="image"></div>
                 <div class="image"></div>
             </div>
+
+            <h2 class="h2">An <span class="accent">open platform</span> to <span class="accent">showcase your talents</span> to the open world.</h2>
+            <p class="p3 txt2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ea doloribus culpa laboriosam repellendus, nesciunt omnis modi aliquid veritatis voluptates.</p>
+            <a href="#" class="btn1">Participate Now</a>
+            <a href="https://www.youtube.com/channel/UCiHXv7Lruf9vXLBteBP3QOA" class="btn2">YouTube Page</a>
         </header>
 
         <div class="viewSection pad hide" id="viewSection">
@@ -51,7 +52,7 @@
         </main>
 
         <div class="perkSection pad">
-            <h3 class="h3">A <span class="accent">leading stage for new talents</span><br/>to showcase themselves. <div class="hline"></div></h3>
+            <h3 class="h3">A <span class="accent">leading stage for new talents </span><br class="notForMobile" />to showcase themselves. <div class="hline"></div></h3>
             <div class="perks grid mar60">
                 <div class="perk"></div>
                 <div class="perk"></div>
